@@ -1,0 +1,20 @@
+{
+  "python": "3.13.1",
+  "torch": "2.10.0",
+  "cpu_threads_per_run": 1,
+  "seeds_verified": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "all_seed_results_match_supplied_json": true,
+  "reference_run_matches_supplied_json": true,
+  "scope": "Numerical fields and loss histories reproduced; no certified integration-error or exhaustive-root guarantee."
+}
