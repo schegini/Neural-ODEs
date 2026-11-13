@@ -7,7 +7,7 @@ This project explores how a Neural Ordinary Differential Equation (Neural ODE) l
 
 The logistic equation provides an exact solution for comparison. This lets us examine how closely the model fits the data. It also lets us check whether the model learns the correct long-term behavior.
 
-**[Read the paper](main.pdf)** · **[View the LaTeX source](main.tex)** · **[View the implementation](code/neural_ode_logistic.py)**
+**[Read the paper](main.pdf)** · **[View the LaTeX source](main.tex)** · **[View the implementation](node.py)**
 
 ## The experiment
 
