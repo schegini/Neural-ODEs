@@ -114,6 +114,8 @@ Regenerating an experiment figure does not update the compiled paper automatical
 ├── main.tex                       # Paper source
 ├── main.pdf                       # Compiled paper
 ├── node.py                        # Training, evaluation, and plotting
+├── figures/
+    └── neural-ode-fit.pdf         # Trajectory and vector field plots
 ├── results/
 │   ├── seed0.json                 # Reference metrics and loss history
 │   └── seed_study.json            # Results for seeds 0–9
