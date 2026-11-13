@@ -68,24 +68,24 @@ python -m pip install torch==2.10.0 matplotlib
 Train the reference model and generate its results and figure:
 
 ```sh
-python code/neural_ode_logistic.py
+python node.py
 ```
 
 Repeat the experiment for all ten seeds:
 
 ```sh
-python code/neural_ode_logistic.py --study 10
+python node.py --study 10
 ```
 
 Run a different individual seed:
 
 ```sh
-python code/neural_ode_logistic.py --seed 3
+python node.py --seed 3
 ```
 
 Each experiment uses one CPU thread. The ten-seed study runs several experiments in parallel.
 
-These commands replace the corresponding files in `results/`. An individual run also replaces `figures/neural-ode-fit.pdf` with its own comparison plot. The supplied paper and figure use seed 0.
+These commands replace the corresponding files in `results/`. The supplied paper and figure use seed 0.
 
 ## Compile the paper
 
@@ -113,11 +113,7 @@ Regenerating an experiment figure does not update the compiled paper automatical
 ├── README.md
 ├── main.tex                       # Paper source
 ├── main.pdf                       # Compiled paper
-├── references.bib                 # Bibliography
-├── code/
-│   └── neural_ode_logistic.py      # Training, evaluation, and plotting
-├── figures/
-│   └── neural-ode-fit.pdf          # Reference trajectory and vector fields
+├── node.py                        # Training, evaluation, and plotting
 ├── results/
 │   ├── seed0.json                 # Reference metrics and loss history
 │   └── seed_study.json            # Results for seeds 0–9
